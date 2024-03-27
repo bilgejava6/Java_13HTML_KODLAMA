@@ -1,0 +1,67 @@
+.row{
+    background-color: cadetblue;
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+    margin: 5px;    
+   
+}
+
+.xc{
+    justify-content: center;
+}
+
+.xl{
+    justify-content: flex-start;
+}
+
+.xr{
+    justify-content: flex-end;
+}
+
+.xs{
+    justify-content: space-between;
+}
+
+.col-2{
+    flex: 2;    
+}
+.col-4{
+    flex: 4;    
+}
+.col-6{
+    flex: 6;    
+}
+.col-8{
+    flex: 8;    
+}
+
+.form-element{
+    background-color: darkgoldenrod;
+    margin: 5px;
+    padding: 3px;
+    display: flex;    
+}
+
+.btn-new{
+    background-color: rgb(235, 61, 13);
+    margin: 5px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: bisque;
+    border: 1px solid ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-new:hover{
+    background-color: rgb(243, 96, 55);
+    border: 1px solid rgb(241, 152, 43);
+    color: aqua;
+}

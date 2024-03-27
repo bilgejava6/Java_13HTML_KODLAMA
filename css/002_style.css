@@ -1,0 +1,35 @@
+p{
+    color: green;
+    font-size: small;
+    border: 1px dotted blue;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+
+/** ID  */
+#manset{
+    color: darkmagenta;
+}
+#alt1{
+    color: rgb(222, 202, 14);    
+}
+#alt2{
+    color: darkslateblue;
+}
+
+/** class */
+.paragraf-type-1{
+    color: rgb(222, 202, 14);   
+}  
+
+.paragraf-type-2{
+    font-weight: bolder;
+}
+
+.paragraf-type-3{
+    padding: 15px;
+    background-color: aqua;
+}
+

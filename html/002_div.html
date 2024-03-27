@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div - Span</title>
+</head>
+<body>
+    <!--
+        DIV -> bir taşıyıcı gibi, bileşenleri içerisinde barındıran, grup halnide
+        bileşenleri yönetebileceğimiz bir yapı olarak düşünün.
+        id -> bir bileşenin benzersiz şekilde işaretlenmesi html sayfası içinde kullanılırkern
+        bulunabilmesi için tanımlanır. Zorunlu değildir.
+    -->
+    <div id="container">
+
+        <div id="header">
+                <h1>Muhammet HOCA</h1>
+                <p>Bu sitemizde JAVA ile ilgili güncel bilgileri bulabileceksiniz.</p>
+        </div>
+
+        <div id="menu">
+                Menu
+               <p> - Ana sayfası</p>
+               <p> - Java</p>
+               <p> - Spring</p>
+               <p> - DataBase</p>
+               <p> - Kubernetes</p>
+                muhammet <br> hoca <br> nsılsın napan nerlerdeydin?
+        </div>
+        
+        <div id="blog">
+                <div>
+                    <h2>Java Spring Boot</h2>
+                    <p>Spring boot çalışma şekillleri ve bağımlılıklar</p>
+                </div>
+                <div>
+                    <h2>Java EE & Java Server Pages</h2>
+                    <p>Javanın ilk MVC html template engine yapısı. 
+                        <span style="background-color: yellow;">(Java Server Page - JSP)</span>
+                        Bu yapı ile server side web uygulamaları 
+                        geliştirebiliriniz. 
+                    </p>
+                </div>
+        </div>
+
+
+        <div id="footer">
+            Footer - Açıklamalar, email gönder, bizimle iletişime geçin, iletişim,
+        </div>
+
+    </div>
+
+</body>
+</html>

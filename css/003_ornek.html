@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek</title>
+    <style>
+        div{
+            border: 1px dotted red;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px ;
+        }
+        input{
+            display: block;
+            width: 60%;
+            height: 20px;
+            font-size: 13px;
+            background-color: bisque;
+
+        }
+        input:focus{
+            background-color: white;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            color: blueviolet;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        img{
+            display: inline-block;
+            margin-top: 15%;
+            width: 20%;
+            height: 30%;
+        }
+        .main{
+            text-align: center;
+        }
+        .container{
+            display: inline-block;
+            border: 2px solid blue;
+            height: 600px;
+            width: 50%;
+            margin-top: 10%;
+        }
+        /**
+         inline  - block element
+        */
+        .avatar{
+            text-align: center;
+            height: 250px;
+        }
+        .form-element{
+            text-align: left;
+            height: 100px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .form-button{
+            text-align: right;
+            height: 150px;
+            padding-right: 20%;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="avatar">
+                <img src="../img/icons8-avatar-100.png">
+            </div>
+            <div class="form-element">
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-element">
+                <label for="password">Şifre</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-button">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

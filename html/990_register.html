@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <title>Register</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost:9090/dev/v1/auth/register" method="post" >
+        <div>
+            <label for="ad">Kullanıcı adı...: </label>
+            <input type="text" name="userName" id="ad">
+        </div>
+        <div>
+            <label for="posta">Email adresi....: </label>
+            <input type="email" name="email" id="posta">
+        </div>
+        <div>
+            <label for="sifre">Şifre................: </label>
+            <input type="password" name="password" id="sifre">
+        </div>
+        <button type="submit">Üye Ol</button> 
+        <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>
