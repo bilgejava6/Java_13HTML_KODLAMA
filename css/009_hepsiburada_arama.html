@@ -8,15 +8,60 @@
 </head>
 <body>
     <div class="container">
-        <div class="row m-rh-2 ma1 br2"></div>
+        <div class="row m-rh-2 ma1 br2 byt0">        
+        </div>
         <div class="row m-rh-6 ma1 br2 byt2">
-            <div class="col col-2 ma1 br1" ></div>
+            <div class="col col-2 ma1 br1" >
+                <div class="box" id="markalar">
+                    <h3>Markalar</h3>
+                    <div class="select-hover">
+                        <input type="checkbox" name="" id="">
+                        <label>Asus</label>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <h3>Fiyat Aralığı </h3>
+                    <div>
+                        <input class="inputminmax" type="text" placeholder="min">
+                        <input class="inputminmax" type="text" placeholder="max">
+                        <button type="submit">Ara</button>
+                    </div>
+                    <div>
+                        <input type="radio" name="aralik" id="">
+                        <label>100 - 1.000</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="aralik" id="">
+                        <label>1.000 - 5.000</label>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="col col-8">
                 <div class="row ma1 br1 col-1"></div>
                 <div class="row ma1 br1 col-8"></div>
             </div>
         </div>
-    </div>
-   
+    </div>   
+    <button onclick="yukle()">Tüm Dataları Getir.</button>
+    <script>
+        function yukle(){
+            const markalar = ["Asus","Lenovo","HP","ViewSonic","Samsung"];
+
+            let divMarka = document.getElementById('markalar');
+
+            markalar.map(data=>{
+                divMarka.innerHTML += 
+                            "<div class='select-hover'>"+
+                            "<input type='checkbox' >"+
+                            "<label>"+data+"</label>"+
+                        "</div>";
+                    
+            });
+        }
+       
+
+    </script>
 </body>
 </html>

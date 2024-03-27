@@ -11,10 +11,36 @@
     flex-direction: row; 
 }
 
-.col{
-    border: 1px dotted blue;
+.col{    
     display: flex;
     flex-direction: column;
+}
+
+div{
+    margin-bottom: 5px;
+}
+
+.box{
+    border: 2px solid cadetblue;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.inputminmax{
+    padding: 5px;
+    border-radius: 4px;
+    margin: 3px;
+    width: 25%;
+}
+
+.select-hover:hover{
+    background-color: rgb(218, 216, 214);
+    width: 60%;
+    border-radius: 5px;
 }
 
 .col-1{
@@ -44,7 +70,7 @@
 
 
 .byt0{
-    width: 100%;
+    width: 95%;
 }
 .byt1{
     width: 80%;   
