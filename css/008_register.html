@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="008_register.css">
+</head>
+<body>
+    <div class="container">       
+        <div class="form-element">
+            <label>Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div class="form-element">
+            <label>email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-element">
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-element">
+            <label>Title</label>
+            <select name="title" id="title">
+                <option>Seçiniz....</option>
+                <option value="ogrenci">Öğrenci</option>
+                <option value="ogrenci">Öğretmen</option>
+                <option value="ogrenci">Veli</option>
+                <option value="ogrenci">Müdür</option>                
+            </select>
+        </div>
+        <div class="form-element">
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone">
+        </div>       
+        <div class="form-element">
+            <label>Cinsiyet</label>
+            <div>
+                <input type="radio" name="cinsiyet"><label>Erkek</label>
+                <input type="radio" name="cinsiyet"><label>Kadın</label>
+                <input type="radio" name="cinsiyet"><label>Diğer</label>                
+            </div>
+        </div>
+        <div class="form-button">
+            <button type="submit">Üye ol</button>
+        </div>
+        <div class="form-element xy-center">
+           <a href="007_login.html">go to login page</a>
+        </div>
+    </div>
+</body>
+</html>
