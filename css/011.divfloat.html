@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Kullanımları</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        #first{
+            background-color: blue;
+            float: right;
+        }
+        #second{
+            background-color: chocolate;
+            float: right;
+        }
+        #third{
+            border-radius: 5px;
+            margin-top: 200px;
+            margin-right: 100px;
+            float: right;
+            box-shadow: 5px 8px 8px 2px rgba(173, 173, 173, 0.496);
+            -moz-box-shadow: 5px 8px 8px 2px rgba(173, 173, 173, 0.496);/* Farklı tarayıcılarda CSS gösterimi için */
+        }
+        /*
+            Ölçü birimleri
+            1- Mutlak birimler
+            px, in, cm, mm, pt, pc -- basım yayın
+
+            2- Kesim olmayan değişebilir, relative
+            em, ex, rem, %, vw, vh, vmin, vmax, ch
+            16px -> rem
+            1 em -> 1 font-size
+        */
+    </style>
+</head>
+<body>
+    <div class="box" id="first"></div>
+    <div class="box" id="second"></div>
+    <div class="box" id="third"></div>
+</body>
+</html>

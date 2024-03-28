@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özel bir tablo yapalım</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+            padding: 4px
+        }
+        table{
+            /*
+            collapse -> border lar bir birlerine bitişik olur
+            separate -> border lar bir birlerinden ayrık
+            */
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr:nth-child(even){
+            background-color: rgb(220,217,217);
+        }
+        tr:hover{
+            background-color: rgba(237, 237, 218, 0.77)
+        }
+        th{           
+            background-color: rgb(11, 146, 237);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Ad Soyad</th>
+                <th>Telefon</th>
+                <th>Adres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Muhammet HOCA</td>
+                <td>0 555 666 9988</td>
+                <td>Ankara</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Deniz KOÇAK</td>
+                <td>0 999 888 7744</td>
+                <td>İzmir</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Burak KORKMAZ</td>
+                <td>0 555 666 9933</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahattin TEKİN</td>
+                <td>0 336 558 9988</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Demet BEKAR</td>
+                <td>0 325 587 9965</td>
+                <td>Samsun</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Demet BEKAR</td>
+                <td>0 325 587 9965</td>
+                <td>Samsun</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Demet BEKAR</td>
+                <td>0 325 587 9965</td>
+                <td>Samsun</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Demet BEKAR</td>
+                <td>0 325 587 9965</td>
+                <td>Samsun</td>
+            </tr>
+        </tbody>
+    </table>  
+</body>
+</html>

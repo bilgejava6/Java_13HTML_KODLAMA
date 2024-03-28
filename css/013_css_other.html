@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS farklı kullanım şekilleri</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 4px;
+            display: inline-block;
+        }
+        /*
+        Pseudo Element Seçimi
+        */
+        p::first-line{
+            color: green;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: xx-large;
+        }
+        p::after{
+            color: brown;
+            content: "Ben BURADAYIM";
+        }
+        ul li:first-child{
+            font-style: italic;
+            color: gray;
+        }
+        /* ÇİFT ler*/
+        ul li:nth-child(even){
+            border: 1px solid red;
+            margin: 2px;
+        }
+        /* TEK ler*/
+        ul li:nth-child(odd){
+            border: 1px solid skyblue;
+            margin: 2px;
+        }
+        /*
+         bir link olarak düşünürsek, eğer bir link e
+         tıklanmış ise daha önce bunu ziyaret edilip
+        edilmediği farkındalığı için farklı renk olaak
+        gösterilir.
+        */
+        button{
+            color: purple;
+        }
+        button:visited{
+            color: green;            
+        }
+        button:hover{
+            color: red;
+        }
+        button:active{
+            background-color: aqua
+        }
+        button:focus{
+            width: 100px;
+        }
+        button:hover + span{
+            display: block;
+            background-color: green;
+            color: red;
+        }
+        input[type="text"]{
+            background-color: bisque;
+        }
+        input[type="text"]:focus{
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <input type="password" name="name" id="name">
+    <input type="email" name="name" id="name">    
+    
+    <input type="submit" value="Kaydet">    
+    <button>İşlem -1</button>
+    <button>İşlem -1</button>
+    <button>İşlem -1</button>
+    <span>Burada arada bulunan bir TAG</span>
+    <ul>
+        <li>Değer-1</li>
+        <li>Değer-2</li>
+        <li>Değer-3</li>
+        <li>Değer-4</li>
+        <li>Değer-5</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt esse aut, iusto dolore voluptatem voluptates! Dignissimos possimus dolor quod incidunt culpa sint nesciunt molestiae explicabo similique, asperiores, beatae tenetur quasi!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum quidem earum recusandae facere sunt ab eum, eaque, porro omnis corrupti in obcaecati id rem, commodi minima pariatur sint eius.
+        Libero corporis ad, tempora deleniti fugiat, adipisci nesciunt, deserunt suscipit ipsum saepe incidunt perferendis iure dignissimos facilis minus reprehenderit necessitatibus placeat accusamus dolorum veritatis nam animi. Nam aperiam modi qui?
+        Consequuntur placeat sapiente voluptas perspiciatis error, culpa nemo suscipit vitae in autem dolore velit consequatur quisquam repudiandae laudantium doloribus unde corporis, nesciunt, provident ullam fugiat quo accusantium atque. Error, eligendi.
+        Quam quibusdam quae rerum quod quasi est modi ab deserunt! Nisi sequi dicta at deserunt provident blanditiis fuga consequatur, dolore sint, voluptatum dolor repellat reprehenderit maiores accusantium exercitationem animi corporis!
+        Ipsa dolorem modi eos animi tempora, consectetur perferendis aperiam sequi cumque eligendi vitae atque voluptatum illo natus corrupti soluta rem doloremque. Ducimus sunt voluptatibus, assumenda blanditiis ad nam aliquid tempore.
+    </p>
+    <div class="box">İçerik-01</div>
+    <div class="box">İçerik-02</div>
+    <div class="box">İçerik-03</div>
+    <div class="box">İçerik-04</div>
+    <div class="box">İçerik-05</div>
+    <div class="box">İçerik-06</div>
+</body>
+</html>
