@@ -1,0 +1,47 @@
+.row{
+    border: 2px solid rgb(238, 174, 13);
+    border-radius: 10px;
+}
+.rh1{
+    width: 70%;           
+    height: 80px;
+    margin: 10px;
+    margin-left: 15%;
+    text-align: center;
+}
+.rh2{
+    margin: 10px;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    display: flex;
+    flex: 1;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 5px;
+}
+img{
+    border-radius: 10px;
+}
+.box-relative{
+    position: relative;
+}
+.text-overlay {  
+    position:absolute;          
+    top: 70%; 
+    left: 5%;
+    width: 80%;
+    border-radius: 15px;
+    padding: 5%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white; 
+    backdrop-filter: blur(4px) brightness(90%);
+    }
