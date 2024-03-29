@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Oluşturma</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <button onclick="ekle()">Bileşen Ekleme</button>
+    <script>
+        function ekle(){
+            let li = document.createElement('li'); // yeni bir bileşen oluştur
+            li.textContent = "Java"; // içerisine yazı ekle
+            let div = document.getElementById('root'); // div elementini id sinden seç
+            div.appendChild(li); // li yi div in içerisine alt eleman olarak ekle
+        }
+    </script>
+</body>
+</html>

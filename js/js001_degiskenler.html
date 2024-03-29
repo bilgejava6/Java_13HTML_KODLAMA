@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DEğişkenler</title>
+</head>
+<body>
+    <h1>JavaScript Değişkenler</h1>
+
+    <script>
+        console.log('Merhaba dünya!');
+        console.log("Nasıl sınız?");
+        /**
+         * JavaSrcipt TypeSafe bir dil değildir.
+         */
+        var degisken =  'Ali';
+        console.log('değişken.....: ', degisken);
+        degisken = 56;
+        console.log('değişken.....: ', degisken);
+        let degisken2 = 544;
+        console.log('değişken.....: ', degisken2);
+        const degismez_degisken = 453;
+        console.log('değişmez.....: ', degismez_degisken);
+        /*
+        Dikkat Önemli!!!!
+        Eğer bir JS kodu bir noktada hata verirse, devamında olan kodlar çalışmaz.
+        */
+        // degismez_degisken = 544; // HATA verir.
+        console.log('değişmez.....: ', degismez_degisken);
+
+        var mesajiniz = prompt('Bana bir mesaj ver...: ');
+        console.log('Kullanıcı mesajı.....: ', mesajiniz);
+
+        
+    </script>
+</body>
+</html>

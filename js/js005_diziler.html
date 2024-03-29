@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Diziler</title>
+</head>
+<body>
+    <h1>Diziler</h1>
+    <script>
+        /**
+         * Dizi nasıl tanımlanır?
+        */
+       var marka = ['bmw',"mercedes",'audi',"opel"];
+       var model = new Array('e200', 'a8', 'mokka');
+       console.log(marka);
+       console.log('Modeller....:(Original) ',model);
+       /**
+        * Dizilerde işlemler, ekleme, silme, araya ekleme, okuma v.s.
+       */
+      model.push('a6'); // sona ekleme yaptı.
+      console.log('Modeller.....:(Push) ', model);
+      model.unshift('a3');  // başa ekleme yapar
+      console.log('Modeller.....:(Unshift) ', model);
+      model.pop(); // son elemanı çıkartır
+      console.log('Modeller.....:(Pop) ', model);
+      model.shift(); // ilk elemanı siler.
+      console.log('Modeller.....:(Shift) ', model);
+      console.log('bir elamanın konumu almak (a8)..: ', model.indexOf('a8')); 
+      model.reverse(); // diziyi tersten sıralar  ve diziye uygular.
+      console.log(model); 
+      model.sort(); // a..z sıralama yapar.      
+      console.log(model);
+      model.push('A4');
+      model.push('glk');
+      console.log(model);
+      model.splice(1,3); // [1,3) şeklinde diziyi kırpar.
+      console.log(model);
+
+    </script>
+</body>
+</html>

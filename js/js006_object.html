@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeler</title>
+</head>
+<body>
+    <h1>JS Obje Kavramı</h1>
+    <script>
+        var araba = {
+            id: 1,
+            marka: 'BMW',
+            model: '320d',
+            yil: 2024,
+            km: 6001,
+            fiyat: 4500000
+        };
+        console.log(araba);
+        console.log('Marka model...: ', (araba.marka +' - '+ araba.model));
+
+        var arabalar = [
+            {
+                id: 1,
+                marka: 'bmw'
+            },
+            {
+                id: 2,
+                marka: 'mercedes'
+            },
+            {
+                id: 3,
+                marka: 'audi'
+            }
+        ];
+        console.log('1. index...: ', arabalar[1]);
+        console.log('2. index marka...: '+ arabalar[2].marka);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+</head>
+<body>
+    <h1>JS Function</h1>
+
+    <button onclick="toplama(5,4)">Toplama yap</button>
+
+    <script>
+        /**
+         * Java - Method == JavaScript - Function
+         * function lar tetiklenmedikçe, çağırımı yapılmadıkça çalışmazlar
+        */
+       function toplama(a,b){
+            console.log('İki sayının toplamı.... ', (a+b));
+       }
+       
+       function toplamaR(a,b){
+            return a+b;
+       }
+
+       console.log('Buradayım...');
+
+       toplama(544,33);
+
+       var toplamaSonucu = toplamaR(6,9);
+       console.log(toplamaSonucu);
+       toplamaSonucu = toplamaR('Muhammet ', 'HOCA');
+       console.log(toplamaSonucu);
+
+       /**
+        * Bir funnction bir değişkene atana bilir.
+        * 
+       */
+
+       const carpim = function(a,b){
+        return a*b;
+       }
+       console.log(carpim(5,3));
+
+    </script>
+</body>
+</html>
