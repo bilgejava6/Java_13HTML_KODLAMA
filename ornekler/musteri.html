@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müşteri Kayıt</title>
+    <link rel="stylesheet" href="musteri.css">
+</head>
+<body>
+    <div class="row row-header mb-4">
+        <div class="col col-8 col-radius-left">
+            <div class="row flex-1 flex-row">
+                <div class="col flex-1">
+                    <div class="form-element">
+                        <label for="id">Id</label> <br>                        
+                        <input class="input-text" type="text" name="id" id="id">
+                    </div>
+                </div>
+                <div class="col flex-1">
+                    <div class="form-element">
+                        <label for="tel">Telefon</label> <br>                        
+                        <input class="input-text"  type="text" name="tel" id="tel">
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-1 flex-row">
+                <div class="col flex-1">
+                    <div class="form-element">
+                        <label for="ad">Ad Soyad</label> <br>                        
+                        <input class="input-text"  type="text" name="ad" id="ad">
+                    </div>
+                </div>
+                <div class="col flex-1">
+                    <div class="form-element">
+                        <label for="meslek">Meslek</label> <br>                        
+                        <select class="input-text"  name="meslek" id="meslek">
+                            <option>Seçiniz</option>
+                            <option value="yazilim">Yazılım</option>                          
+                            <option value="cto">CTO</option>
+                            <option value="takimlideri">Takım Lideri</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-1">
+                <div class="form-element">
+                    <label for="adres">Adres</label> <br>
+                    <textarea class="input-text" cols="100%" name="adres" id="adres" rows="2"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col col-4 col-radius-right">
+            <div class="row flex-1">
+                <button onclick="ekle()"> Ekle</button>
+            </div>
+            <div class="row flex-1">
+                <button type="reset">Temizle</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="row row-container flex-top">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>ad soyad</th>
+                    <th>telefon</th>
+                    <th>meslek</th>
+                    <th>adres</th>
+                    <th>işlemler</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let musteriList = []; // array list
+        function duzenle(index){
+            console.log('Düzenleye tıklandı....: ', musteriList[index]);
+        }
+
+        function sil(id){
+            alert('silme işlemine tıklandı...: '+ id);
+            /**
+             *  Müşteri listesi içinden silme işlemi yapılacak
+             *  - bir değere göre filter
+             *  - index bulunur ve ilgili kayıt remove edilir.
+             */ 
+            musteriList = musteriList.filter(m=> m.id!=id);
+            tabloDuzenle();
+        }
+
+        function ekle(){
+            /**
+             * dom elementi nasıl okunur?
+             *  
+             */
+             let id = document.getElementById('id').value;
+             let ad = document.getElementById('ad').value;
+             let telefon = document.getElementById('tel').value;
+             let adres = document.getElementById('adres').value;
+             let meslek = document.getElementById('meslek').value;
+          
+             // DİKKAT, eğer key ile value aynı değişken ismine sahip ise sadece birisi yazılsa yeterli olur.
+             musteriList.push({
+                id, // -> key(değişken adı) 'id': value(değişken değeri) id
+                ad,
+                adres,
+                telefon,
+                meslek            
+            });
+          tabloDuzenle();
+        }
+
+        function tabloDuzenle(){
+            let tableBody = document.getElementById('table_body');
+            tableBody.innerHTML = '';
+            /**
+             * forEach
+             * map
+             * ikiside aynı işlevleri yerine getirir ancak 
+             * map geriye değer döner, forEach geriye değer dönmez
+             *  
+             */
+            musteriList.forEach((m,index)=>{
+                tableBody.innerHTML += `<tr>
+                    <td>${m.id}</td>
+                    <td>${m.ad}</td>
+                    <td>${m.telefon}</td>
+                    <td>${m.meslek}</td>
+                    <td>${m.adres}</td>
+                    <td>
+                        <button onclick="duzenle(${index})" >Düzenle</button>
+                        <button onclick="sil(${m.id})">Sil</button>                        
+                    </td>
+                </tr>`;
+            });
+            
+        }
+
+    </script>
+</body>
+</html>

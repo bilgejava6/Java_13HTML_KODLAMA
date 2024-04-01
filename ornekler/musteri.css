@@ -1,0 +1,99 @@
+.row{
+    border: 2px solid burlywood ;
+    border-radius: 15px;
+    display: flex;
+}
+.m{
+    margin: 5px;
+}
+.m-2{
+    margin: 10px;
+}
+.mt{
+    margin-top: 5px;
+}
+.mb{
+    margin-bottom: 5px;
+}
+.mb-4{
+    margin-bottom: 20px;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.form-element{
+    padding: 5px;
+}
+.input-text{
+    width: 90%;
+    border-radius: 5px;
+}
+.row-header{
+    margin-left: 10%;
+    width: 80%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid seagreen;    
+}
+
+.col-radius-left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;    
+}
+
+.col-radius-right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;    
+}
+.col-8{
+    flex: 8;
+}
+.col-4{
+    flex: 4;
+}
+.flex-1{
+    flex: 1;
+}
+.row-container{
+    margin-left: 2%;
+    width: 96%;
+    min-height: 400px;
+}
+
+.flex-top{
+    align-items: flex-start;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 4px
+}
+table{
+    /*
+    collapse -> border lar bir birlerine bitişik olur
+    separate -> border lar bir birlerinden ayrık
+    */
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color: rgb(220,217,217);
+}
+tr:hover{
+    background-color: rgba(237, 237, 218, 0.77)
+}
+th{           
+    background-color: rgb(11, 146, 237);
+    color: white;
+}
